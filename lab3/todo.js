@@ -7,12 +7,12 @@ add.addEventListener('click', function(){
 	var p = document.createElement('p');
 	var span = document.createElement('span')
 	var checkbox = document.createElement('input');
+
 	checkbox.classList.add('checkbox');
 	checkbox.type = "checkbox";
 	checkbox.name = "name";
 	checkbox.calue = "value";
 	checkbox.id = "id";
-
 	
 	var img = document.createElement('img');
 	img.src = 'delete.png';
