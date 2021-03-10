@@ -1,0 +1,11 @@
+<input type="text" id="inp" />
+<button (click)="add()">create</button>
+<div *ngFor="let list of list">
+  <h3>
+    <a [routerLink]="['/albums', list.id]">
+      {{list.title}}
+    </a>
+  </h3>
+  <button (click)="delete(list.id)">delete</button>
+  <hr />
+</div>

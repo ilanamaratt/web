@@ -1,0 +1,28 @@
+/* Add application styles & imports to this file! */
+a {
+  text-decoration: none;
+  color: blue;
+}
+a:hover {
+  color: blue;
+}
+button {
+  padding: 10px;
+  color: white;
+  background-color: rgb(14, 14, 82);
+  border: none;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+input {
+  margin-right: 10px;
+  padding: 10px;
+}
+body {
+  text-align: center;
+}
+nav {
+  font-size: 20px;
+  margin-bottom: 25px;
+}

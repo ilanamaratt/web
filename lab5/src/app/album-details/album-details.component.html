@@ -1,0 +1,12 @@
+<div *ngIf="list">
+  <h3>
+    <h1>The list item you have chosen is #{{list.id}}</h1>
+    <p>
+      {{list.title}}
+    </p>
+    <br />
+    <a [routerLink]="['/albums', list.id ,'photos']"> photos </a>
+    <!-- <a [href]="list.url" [routerLink]="['/list', list.id]"> click here to see a photo</a> -->
+    <button (click)="goBack()">Back</button>
+  </h3>
+</div>
