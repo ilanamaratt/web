@@ -1,0 +1,16 @@
+<button (click)="goBack()">Back</button>
+<div *ngIf="!loading">
+  <div *ngFor="let photo of photo">
+    <table>
+      <tr>
+        <td>
+          <img [src]="photo.url" />
+        </td>
+        <td>
+          {{photo.title}}
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+<p *ngIf="loading"> please wait </p>

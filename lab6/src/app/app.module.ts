@@ -11,6 +11,7 @@ import { AlbumDetailsComponent } from "./album-details/album-details.component";
 import { AlbumPhotosComponent } from "./album-photos/album-photos.component";
 import { HomeComponent } from "./home/home.component";
 import { AppRoutingModule } from "./app-routing.module";
+import { AlbumsService } from "./albums.service";
 
 @NgModule({
   imports: [
@@ -19,7 +20,9 @@ import { AppRoutingModule } from "./app-routing.module";
     FormsModule,
     HttpClientModule,
     ReactiveFormsModule,
-    BrowserModule
+    BrowserModule,
+    HttpClientModule,
+    FormsModule
   ],
   declarations: [
     AppComponent,
@@ -29,6 +32,7 @@ import { AppRoutingModule } from "./app-routing.module";
     AlbumDetailsComponent,
     AlbumPhotosComponent
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  providers: [AlbumsService]
 })
 export class AppModule {}

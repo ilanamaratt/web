@@ -1,0 +1,16 @@
+<div *ngIf="!loading">
+  <h3>
+    <h1>The list item you have chosen is #{{list.id}}</h1>
+    <h2> Albums List </h2>
+    <input type="text" [(ngModel)]="newtitle" />
+    <button (click)="add(list)" >save</button>
+    <p>
+      {{list.title}}
+    </p>
+    <br />
+    <a routerLink="/albums/{{list.id}}/photos"> photos </a>
+    <button (click)="goBack()">Back</button>
+  </h3>
+</div>
+
+<p *ngIf="loading"> please wait </p>
